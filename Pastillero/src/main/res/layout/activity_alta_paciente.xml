@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/altaPacientes_tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:id="@+id/altaPacientes_tab1Layout"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent">
+
+                <TableRow
+                    android:id="@+id/altaPacientes_tableRow_campoNombre"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Nombre"
+                        android:id="@+id/altaPacientes_textView_nombre"
+                        android:layout_gravity="left|center_vertical" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/altaPacientes_editText_nombre"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/altaPacientes_tableRow_campoApellido"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Apellido"
+                        android:id="@+id/altaPacientes_textView_apellido"
+                        android:layout_gravity="left|center_vertical" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/altaPacientes_editText_apellido"
+                        android:layout_gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/altaPacientes_tableRow_edad"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Edad"
+                        android:id="@+id/altaPacientes_textView_edad"
+                        android:layout_gravity="left|center_vertical" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/altaPacientes_editText_edad"
+                        android:inputType="number"
+                        android:layout_gravity="center" />
+                </TableRow>
+                <TableRow
+                    android:id="@+id/altaPacientes_tableRowDni"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="DNI"
+                        android:id="@+id/altaPacientes_textView_dni"
+                        android:layout_gravity="left|center_vertical" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/altaPacientes_editText_dni"
+                        android:inputType="number"
+                        android:maxLength="8"
+                        android:layout_gravity="center" />
+                </TableRow>
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:id="@+id/altaPacientes_imageView_foto"
+                    android:layout_gravity="left|center_vertical" />
+                <!--android:src="@android:drawable/ic_notification_overlay"-->
+
+                <!--<TableLayout-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="fill_parent"-->
+                    <!--android:layout_gravity="left|center_vertical">-->
+                    <TableRow
+                        android:id="@+id/altaPacientes_tableRow_botones_OkCancel"
+                        android:layout_width="fill_parent"
+                        android:layout_marginTop="150dp"
+                        android:layout_height="wrap_content" >
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/altaPacientes_imageButton_ok"
+                            android:layout_marginLeft="65dp"
+                            android:layout_marginRight="200dp"
+                            android:layout_gravity="left|bottom" />
+                        <ImageButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/altaPacientes_imageButton_cancel"
+                            android:layout_gravity="center_horizontal" />
+                        </TableRow>
+                    <!--</TableLayout>-->
+
+
+                <!--android:src="@android:drawable/ic_notification_overlay"-->
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

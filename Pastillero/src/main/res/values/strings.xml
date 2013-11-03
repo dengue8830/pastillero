@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Pastillero</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="mensajes.helloworld">Hola mundo</string>
+    <string name="checks.sexo">Sexo?</string>
+    <string name="opciones_agregar_paciente">Nuevo paciente</string>
+    <string name="title_activity_borrar">borrar</string>
+    <string name="title_activity_alta_paciente">AltaPacientes</string>
+
+</resources>
